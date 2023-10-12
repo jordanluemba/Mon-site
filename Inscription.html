@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+.bouton{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.bouton a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid #93d6d0;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+.bouton a:hover{
+    cursor: pointer;
+    background-color: #93d6d0;
+}
+.contain {
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    border: 2px solid #93d6d0;
+    margin-top: 0px;
+}
+.contain .heading {
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    padding: 0 0 20px 0;
+    color: white;
+}
+.contain .heading::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #93d6d0;
+}
+.contain form .card-details{
+    margin-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .card-details .card-box {
+    width: calc(100%/2 - 20px);
+    margin-bottom: 15px;
+}
+.card-details  .card-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: white;
+}
+.card-details .card-box input,
+.card-details .card-box select {
+    height: 25px;
+    width: 90%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #93d6d0;
+    padding-left: 15px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+.card-details .card-box input:focus,
+.card-details .card-box input:valid {
+    border-color: #93d6d0;
+}
+form .button {
+    text-align: center;
+}
+form .button input{
+    padding: 10px 0;
+    margin-top: 10px;
+    height: 100%;
+    width: 25%;
+    outline: none;
+    color: white;
+    border: 1px solid #93d6d0;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background-color: transparent;
+}
+form .button input:hover {
+    cursor: pointer;
+    background-color: #93d6d0;
+}
+.button2 {
+    width: 150px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 10px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #93d6d0;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+ }
+.button2:hover {
+    cursor: pointer;
+    background-color: #93d6d0;
+}
+.button2 a {
+    text-decoration: none;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> <span>GEST</span>-ACT-<span>ETUD</span></div>
+        <ul class="menu">
+            <a href="Accueil.html" class="active">Accueil</a>
+            <a href="Activités.html">Nos activités</a>
+            <a href="Calendrier.html">Calendrier</a>
+            <a href="Contact.html">Contact</a>
+        </ul>
+    </header>
+
+    <section class="section">
+        <div class="body">
+            <div class="contain">
+                <div class="heading">Formulaire d'inscription</div>
+                <form>
+                    <div class="card-details">
+                        <div class="card-box">
+                            <span class="details">Nom</span>
+                            <input type="text" placeholder="Entrer votre nom">
+                        </div>
+                        <div class="card-box">
+                            <span class="details">Postnom</span>
+                            <input type="text" placeholder="Entrer votre Postnom">
+                        </div>
+                        <div class="card-box">
+                            <span class="details">Prenom</span>
+                            <input type="text" placeholder="Entrer votre Prenom">
+                        </div>
+                        <div class="card-box">
+                            <span class="details">Genre</span>
+                            <select>
+                                <option>Masculin</option>
+                                <option>Féminin</option>
+                            </select>
+                        </div>
+                        <div class="card-box">
+                            <span class="details">Téléphone</span>
+                            <input type="tel" placeholder="08********">
+                        </div>
+                        <div class="card-box">
+                            <span class="details">Email</span>
+                            <input type="Email" placeholder="Entrer votre Email">
+                        </div>
+                        <div class="card-box">
+                            <span class="details">Adresse</span>
+                            <input type="Email" placeholder="Entrer votre Adresse">
+                        </div>
+                        <div class="card-box">
+                            <span class="details">Section</span>
+                            <select>
+                                <option>Licence</option>
+                                <option>Master</option>
+                                <option>Doctorat</option>
+                            </select>
+                        </div>
+                        <div class="card-box">
+                            <span class="details">Promotion</span>
+                            <select>
+                                <option>L1</option>
+                                <option>L2</option>
+                                <option>L3</option>
+                            </select>
+                        </div>
+                        <div class="card-box">
+                            <span class="details">Mot de passe</span>
+                            <input type="password" placeholder="Enter votre mot de passe">              
+                        </div>
+                    </div>
+                    <div class="button">
+                        <button class="button2"><a href="Accueil.html">Enregistrer</a></button>
+                        <button class="button2"><a href="Accueil.html">Annuler</a></button>
+                        <button class="button2" type="reset">Supprimer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
